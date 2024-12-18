@@ -7,7 +7,7 @@ participant DCR
 participant Pub as Publisher
 participant DSP
 
-DCR->>DCR: 1.a Generate Ks for Advertiser-Puublisher pair
+DCR->>DCR: 1.a Generate Ks for Advertiser-Publisher pair
 DCR->>DCR: 1.b Generate Ka
 DCR->>DCR: 1.c Generate Kp
 

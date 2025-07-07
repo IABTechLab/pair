@@ -27,8 +27,8 @@ AC->>PC: 2.h AC shares the whole PAIR ID list with PC ( i.e. list created in 2.e
 
 PC->>PC: 3.a PC matches PAIR IDs from step 2.f and 2.h
 AC->>AC: 3.b AC matches PAIR IDs from step 2.e and 2.g
-PC->>Pub: 3.c Tabular list with two columns, <br/>(1) raw PII (e.g. email and <br/>(2) KsKp encrypted IDs. <br/><br/>This list contains all the Publisher PII not just matches.
+PC->>Pub: 3.c Tabular list with two columns, <br/>(1) raw PII (e.g. email and <br/>(2) Base64-encoded KsKp encrypted Publisher Identifiers. <br/><br/>This list contains all the Publisher PII not just matches.
 AC->>AC: 3.d Decrypt PAIR IDs matched in 3.b by removing the Ka key to get KsKp iDs.
-AC->>DSP: 3.e List of matches encrypted by KsKp (no PII)
+AC->>DSP: 3.e List of matched Base64-encoded KsKp encrypted Publisher Identifiers (no PII)
 
 ```
